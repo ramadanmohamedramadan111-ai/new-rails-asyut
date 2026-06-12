@@ -1,0 +1,51 @@
+(Active Record)
+
+Active Record is a design pattern that combines the data and behavior of an object into a single model class. In Ruby on Rails,
+ every model inherits from ApplicationRecord and directly maps to a database table.
+
+Key points:
+
+One model corresponds to one table.
+Each object represents one row.
+CRUD operations are built in.
+Validation and associations are handled inside the model.
+Less boilerplate code compared to the Repository Pattern.
+
+Repository Pattern differs because it separates business logic from data access.
+ The repository acts as an intermediate layer between the application and the database. 
+ Rails prefers Active Record because it is simpler and provides rapid development.
+
+(Migrations)
+
+
+Migrations provide a version-controlled way to modify the database schema.
+
+Key concepts:
+
+Create tables.
+Add columns.
+Remove columns.
+Rename tables.
+Roll back changes.
+Share schema changes across team members.
+
+Common commands:
+
+rails db:migrate
+
+Apply migrations.
+
+rails db:rollback
+
+Undo last migration.
+
+rails db:migrate:status
+
+Check migration status.
+
+Benefits:
+
+Database schema is tracked in Git.
+Easy collaboration.
+Safe schema evolution.
+Supports rollbacks
